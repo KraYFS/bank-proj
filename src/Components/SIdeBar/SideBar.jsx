@@ -1,9 +1,16 @@
 import React from 'react';
 import style from './SideBar.module.css'
+import logo from './Logo.png'
 
 const SideBar = () => {
     return (
         <aside className={style.SideBar}>
+            <a href='#' className={style.logo}>
+                <img src={logo} alt="" srcset="" />
+                <span className={style.logo_text}>
+                    Dash
+                </span>
+            </a>
             <nav>
                 <a className={style.nav_link} href="#">
                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -163,7 +170,7 @@ const SideBar = () => {
                     </svg>
 
                     <span className={style.nav_link_text}>
-                        My Privileges
+                        Setting
                     </span>
                 </a>
             </nav>

@@ -1,18 +1,22 @@
 .nav_link {
     display: flex;
     align-items: center;
-    width: 190px;
     height: 60px;
     text-decoration: none;
+    padding-left: 30px;
+    transition: .3s all;
 }
 
 .nav_link:hover {
     .nav_link_text {
         color: #2D60FF;
     }
+
     path {
         fill: #2D60FF;
     }
+
+    border-left: 6px solid #2D60FF;
 }
 
 path {
@@ -20,8 +24,12 @@ path {
 }
 
 .SideBar {
+    position: fixed;
+    left: 0;
+    background-color: #fff;
     width: 250px;
     height: 100%;
+    border-right: 1px solid #E6EFF5;
 }
 
 .nav_link_text {
@@ -29,4 +37,19 @@ path {
     font-size: 18px;
     margin-left: 26px;
     transition: .3s all;
+    font-weight: 500;
+}
+
+.logo_text {
+    font-size: 25px;
+    font-weight: 800;
+    color: #343C6A;
+    margin-left: 9px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 30px 35px;
+    text-decoration: none;
 }
