@@ -53,7 +53,7 @@
     transform: rotate(360deg);
 }
 
-.setting_wrapper {
+.setting_wrapper{
     background-color: #F5F7FA;
     border-radius: 100%;
     width: 50px;
@@ -63,4 +63,21 @@
     align-items: center;
     margin-left: 30px;
     transition: 1s all;
+}
+
+.notification_wrapper:hover {
+    transform: scale(1.1);
+}
+
+
+.notification_wrapper {
+    background-color: #F5F7FA;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    transition: .3s all;
 }
