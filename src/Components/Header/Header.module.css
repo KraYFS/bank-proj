@@ -9,14 +9,15 @@
 
 .header_title {
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 600;
     color: #343C6A;
 }
 
 .header_inner {
     display: flex;
     align-items: center;
-    padding: 25px 40px;
+    justify-content: space-between;
+    padding: 20px 40px;
 }
 
 .header_input {
@@ -24,7 +25,7 @@
     font-size: 15px;
     padding: 16px 43px 16px 60px;
     border-radius: 40px;
-    width: 250px;
+    width: 255px;
     height: 50px;
     border: none;
     background-color: #F5F7FA;
@@ -50,7 +51,7 @@
 }
 
 .setting_wrapper:hover {
-    transform: rotate(360deg);
+    transform: rotate(360deg) scale(1.1);
 }
 
 .setting_wrapper{
@@ -67,8 +68,11 @@
 
 .notification_wrapper:hover {
     transform: scale(1.1);
+    background-color: #FE5C73;
+    svg path {
+        fill: #fff;
+    }
 }
-
 
 .notification_wrapper {
     background-color: #F5F7FA;
@@ -80,4 +84,23 @@
     align-items: center;
     margin-left: 30px;
     transition: .3s all;
+}
+
+.avatar {
+    border-radius: 100%;
+}
+
+.avatar_wrapper {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-left: 35px;
+    width: 60px;
+    height: 60px;
+}
+
+.header_items {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
