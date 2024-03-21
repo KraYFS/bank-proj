@@ -56,3 +56,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+main {
+    padding: 100px 0px 0px 250px;
+}
