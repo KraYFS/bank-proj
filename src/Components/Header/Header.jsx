@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from './Header.module.css'
 import avatar from './avatar.png'
 
@@ -43,9 +43,28 @@ const Header = (props) => {
                             <path d="M18.7338 10.4166C15.8619 10.4166 13.5254 8.08029 13.5254 5.2084C13.5254 2.3365 15.8619 0 18.7338 0C21.6057 0 23.942 2.3365 23.942 5.2084C23.942 8.08029 21.6057 10.4166 18.7338 10.4166ZM18.7338 1.5625C16.7233 1.5625 15.0879 3.19786 15.0879 5.2084C15.0879 7.21874 16.7233 8.8541 18.7338 8.8541C20.7441 8.8541 22.3795 7.21874 22.3795 5.2084C22.3795 3.19786 20.7441 1.5625 18.7338 1.5625Z" fill="#FE5C73" />
                         </svg>
                     </a>
-                    <button className={style.avatar_wrapper}>
+                    <button onClick={() => {
+                        const menu = document.getElementById('userMenu')
+
+                        menu.style.opacity === '0'
+                            ? Object.assign(menu, {
+                                style: `
+                                    opacity: 1;
+                                    transform: translateY(0px);
+                                    pointer-events: auto;
+                                `
+                            })
+                            : Object.assign(menu, {
+                                style: `
+                                    opacity: 0;
+                                `
+                            })
+                    }} className={style.avatar_wrapper}>
                         <img className={style.avatar} src={avatar} alt="" />
                     </button>
+                    <div style={{opacity: 0}} id='userMenu' className={style.userMenu}>
+                        text
+                    </div>
                 </div>
             </div>
         </header>

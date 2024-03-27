@@ -104,3 +104,26 @@
     align-items: center;
     flex-direction: row;
 }
+
+.userMenu {
+    position: absolute;
+    right: 40px;
+    top: 80px;
+    width: 100px;
+    height: 40px;
+    background-color: #FE5C73;
+    border-radius: 10px;
+    transform: translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s all;
+    pointer-events: none;
+    color: #fff;
+}
+
+.active {
+    transform: translateY(0px);
+    pointer-events: auto;
+    opacity: 1;
+}
